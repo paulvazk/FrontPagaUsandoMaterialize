@@ -1,0 +1,19 @@
+.box{
+     height: 200px;
+}
+.row>div{
+     padding: 10px;
+     line-height: 60px;
+}
+.row{
+     margin: 40px auto;
+}
+
+.x{
+     background: linear-gradient(45deg, rgb(0, 225, 255),rgb(0, 66, 107));
+}
+nav .badge{
+     position: relative;
+     top: 20px;
+     right: 20px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SEANI.-Admin Dashboard</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <link rel="stylesheet" href="./css/materialize.css">
+     <link rel="stylesheet" href="./css/materialize.css">
+</head>
+<style>
+
+     .section{
+     padding-top: 4vw;
+     padding-bottom: 4vw;
+     }
+     .tabs .indicator{
+     background-color: blue;
+     }
+     .tabs .tabs a:focus, .tabs .tab a:focus.active{
+     background: transparent;
+     }
+</style>
+<body>
+     <header>
+          <nav class="nav-wrapper green">
+               <div class="container-fluid green">
+                    <a href="" class="brand-logo">Administrador</a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                         <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+
+                         <li>
+                              <a href="#">Cerrar Sesion</a>
+                         </li>
+                    </ul>
+                    <ul class="sidenav green lighten-2" id="mobile-menu">
+                         <li>
+                              <a href="#">Cerrar Sesion</a>
+                         </li>
+                    </ul>
+               </div>
+          </nav>
+     </header>
+     <br>
+     <br>
+     <section class="container section" id="services">
+          <div class="row">
+               <div class="col s12">
+                    <ul class="tabs">
+                         <li class="tab col s6">
+                              <a href="#photography" class="indigo-text text-darken-4">Concentrado de Totales</a>
+                         </li>
+                         <li class="tab col s6">
+                              <a href="#editing" class="indigo-text text-darken-4">Usuarios Alumnos</a>
+                         </li>
+                    </ul>
+                    
+                    <div class="col s12" id="photography">
+                         <p class="flow-text indigo-text text-darken-4">Tabla 1</p>
+                         <div class="input-field">
+                              <label for="search">Buscar</label>
+                              <input type="search" name="" id="search">
+                         </div>
+
+                         <table class="striped centered responsive-table">
+                              <thead>
+                                   <tr>
+                                        <th>No.Alumno</th>
+                                        <th>Nombre</th>
+                                        <th class="hide-on-small-only">Apellido Paterno</th>
+                                        <th class="hide-on-med-and-down">Apellido Materno</th>
+                                        <th>Carrera</th>
+                                        <th>Correctas SEANI</th>
+                                        <th class="hide-on-med-and-down">Incorrectas SEANI</th>
+                                        <th>TOTAL</th>
+                                   </tr>
+                                                 
+                              </thead>
+                              <tbody>   
+                                   <tr>
+                                        <td>20182ITI093</td>
+                                        <td>Paul</td>
+                                        <td class="hide-on-small-only">Vazquez</td>
+                                        <td class="hide-on-med-and-down">Cervantes</td>    
+                                        <td>Tecnologias de La informacion Area Infraestrutura de Redes Digitales</td>
+                                        <td>100</td>
+                                        <td class="hide-on-med-and-down">0</td>
+                                        <td>100</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+
+                    <div class="col s12" id="editing">
+                         <p class="flow-text indigo-text text-darken-4">Tabla 2</p>
+                         <div class="input-field">
+                              <!--
+     -                            <i class="material-icons prefix">search</i>
+                              -->                              
+                              <label for="search">Buscar</label>
+                              <input type="search" id="search">
+                              </div>
+                         <table class="striped centered responsive-table">
+                              <thead>
+                                   <tr>
+                                        <th>ID</th>
+                                        <th>Usuario</th>
+                                        <th>Email</th>
+                                        <th>Fecha Alta</th>
+
+                                   </tr>
+                                                 
+                              </thead>
+                              <tbody>   
+                                   <tr>
+                                        <td>20182ITI093</td>
+                                        <td>Paul</td>
+                                        <td class="">cabrahevymetal@gmail.com</td>    
+                                        <td>El catorce de septiembre del 2020</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+     <div class="container grafico" onload="graficar()">
+          <h1></h1>
+
+
+
+     </div>
+     <script src="js/jquery.js"></script>
+     <script src="js/materialize.js"></script>
+     <script src="js/d3.js"></script>
+     <script src="js/grafica.js"></script>
+     <script >
+          $(document).ready(function () {
+               $('.sidenav').sidenav();
+               $('.materialboxed').materialbox();
+               $('.parallax').parallax();
+               $('.tabs').tabs();
+               $('.datepicker').datepicker({
+                    disableWeekends:true
+               });
+               $('.modal').modal();
+          });
+     </script>  
+</body>
+
+</html>
